@@ -1,0 +1,21 @@
+server:
+  port: 8090
+
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://120.77.13.129:3306/SpringBoot
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    
+jwt:
+  header: Authorization
+  secret: MySecret
+  expiration: 604800
+  tokenHead: "Bearer "    
